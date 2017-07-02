@@ -2,9 +2,6 @@ package com.complete.java.course;
 
 import java.util.Scanner;
 
-import javax.swing.SwingUtilities;
-import javax.swing.plaf.synth.SynthSeparatorUI;
-
 public class BabaClass {
 
 	private static Scanner scanner = new Scanner(System.in);
