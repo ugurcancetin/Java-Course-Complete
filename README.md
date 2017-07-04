@@ -27,7 +27,7 @@ No need for versioning
 
 * **Ugurcan Cetin** - (https://github.com/ugurcancetin)
 
-Contributors are :  [Cansu Arslan](https://github.com/cansuarslancom)
-                    [Ümit Küçük](https://github.com/umitkucuk)
+Contributors are :  [Cansu Arslan](https://github.com/cansuarslancom) ---
+                    [Ümit Küçük](https://github.com/umitkucuk) ---
                     [Türkalp Burak KAYRANCIOĞLU](https://github.com/bkayranci)  who participated in this project.
                     
