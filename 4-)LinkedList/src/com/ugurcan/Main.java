@@ -2,8 +2,6 @@ package com.ugurcan;
 
 import java.util.ArrayList;
 
-import javax.swing.plaf.synth.SynthSeparatorUI;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -16,13 +14,15 @@ public class Main {
 		
 		anotherCustomer.setBalance(12.18);
 		
+		boolean test = false;
+		
 		System.out.println("Balance for customer " + customer.getName() + " is " + customer.getBalance());
 		
 		//Most of the students expect here as output 40.23 as balance because we display first customer balance
 		//Therefore we haven't changed the first customer object balance and output should be 40.23
 		//Well, not really!!
-		//Here what happened in the behind scene actually Java didn't create a new seperate class, it just set 
-		//address of the first class to second class. So we have just saved the memory address. Therefore, 
+		//Here what happened in the behind scene actually when we equals the objects,
+		//we have just saved the memory address. Therefore, 
 		//when we change something with second class, actually we change the first class value as well, because
 		//they point the same address. See the examples below
 		
@@ -36,7 +36,24 @@ public class Main {
 		
 		//============================================================================================================//
 		System.out.println("=====================================================");
+		if(anotherCustomer == customer){
+			test = true;
+			System.out.println(test);
+		}else System.out.println(test);
+		System.out.println("=====================================================");
+		Integer x = new Integer(2);
+		Integer y ;
 		
+		y = x;
+		y = 4;
+		System.out.println(x);
+		// this is not working same on Wrapper classes because everytime when we give a value for variable
+		// new object is being created.
+		if (x == y) {
+			System.out.println("true");
+		}else System.out.println("false");
+		
+		System.out.println("=====================================================");
 		ArrayList<Integer> intList = new ArrayList<Integer>();
 		intList.add(1);
 		intList.add(2);
