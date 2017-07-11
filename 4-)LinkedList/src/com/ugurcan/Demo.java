@@ -56,6 +56,9 @@ public class Demo {
 	
 	private static boolean addInOder(LinkedList<String> linkedList, String newCity){
 		//listIterator is more flexible and special for these kind of cases.
+		//what is important to know here, when we create the ListIterator first time
+		//it doesn't point the first item of the list directly.Thats why we need to 
+		//use .next() 
 		ListIterator<String> stringListIterator = linkedList.listIterator();
 		
 		while(stringListIterator.hasNext()){
