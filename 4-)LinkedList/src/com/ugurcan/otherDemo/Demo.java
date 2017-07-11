@@ -127,30 +127,4 @@ public class Demo {
                 "2 - go to previous city\n" +
                 "3 - print menu options");
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
